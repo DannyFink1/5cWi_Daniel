@@ -1,4 +1,4 @@
-package obj;
+package at.fid.obj;
 
 import java.util.ArrayList;
 import java.util.List;

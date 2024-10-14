@@ -1,4 +1,4 @@
-package obj;
+package at.fid.obj;
 
 public class UI {
     private Controller controller;
