@@ -10,6 +10,9 @@ public class Ticket {
 
     public Ticket() {
         this.id = random.nextInt();
+        this.createdTimestamp = System.currentTimeMillis();
+        this.payedTimestamp = 0;
+
     }
 
     public int getId() {
@@ -26,5 +29,11 @@ public class Ticket {
 
     public void setPayedTimestamp(long payedTimestamp) {
         this.payedTimestamp = payedTimestamp;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket-ID: " + getId() + "\nCreatedTimestamp: " + getCreatedTimestamp() + "\nPayedTimestamp: "
+                + getPayedTimestamp();
     }
 }

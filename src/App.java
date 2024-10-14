@@ -1,9 +1,14 @@
+import obj.Controller;
+import obj.Printer;
 import obj.Ticket;
+import obj.UI;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        Ticket ticket = new Ticket();
-        System.out.println(ticket.getId());
+        UI ui = new UI();
+        Ticket myTicket = ui.getTicket();
+        myTicket.getId();
+        System.out.println("moin");
     }
 }
