@@ -19,4 +19,11 @@ public class Controller {
         return ticket;
     }
 
+    public void payTicket(Ticket ticket) {
+        ticket.setPayedTimestamp(System.currentTimeMillis());
+        System.out.println("-------------");
+        System.out.println("Ticket bezahlt!");
+        System.out.println("ID: " + ticket.getId());
+    }
+
 }

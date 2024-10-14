@@ -8,7 +8,7 @@ public class App {
 
         UI ui = new UI();
         Ticket myTicket = ui.getTicket();
-        myTicket.getId();
-        System.out.println("moin");
+        ui.payTicket(myTicket);
+        ui.showTicketInfo(myTicket);
     }
 }
