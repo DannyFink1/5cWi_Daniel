@@ -21,9 +21,25 @@ public class Controller {
 
     public void payTicket(Ticket ticket) {
         ticket.setPayedTimestamp(System.currentTimeMillis());
-        System.out.println("-------------");
-        System.out.println("Ticket bezahlt!");
-        System.out.println("ID: " + ticket.getId());
+    }
+
+    public double getPrice(Ticket ticket) {
+        if (ticket.getPayedTimestamp() == 0 && tickets.contains(ticket)) {
+            // Würde nur Sinn machen, wenn die Tickets ausserhalb der Runtime gehalten wird.
+            // long activeTime = System.currentTimeMillis() - ticket.getCreatedTimestamp();
+            // long moneyToPay = activeTime / (1000 * 60 * 60 * 60);
+            // System.out.println(activeTime);
+            // System.out.println(moneyToPay);
+            return ticket.getTicketPrice();
+
+        } else {
+            System.out.println("Ticket ist bereits bezahlt.");
+            return -1.0;
+        }
+    }
+
+    public void setPrice(Ticket ticket, double newValue) {
+        ticket.setTicketPrice(newValue);
     }
 
 }

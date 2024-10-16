@@ -7,11 +7,14 @@ public class Ticket {
     private long createdTimestamp;
     private long payedTimestamp;
     private Random random = new Random();
+    private double ticketPrice;
 
     public Ticket() {
         this.id = random.nextInt();
         this.createdTimestamp = System.currentTimeMillis();
         this.payedTimestamp = 0;
+
+        this.ticketPrice = 4.20;
 
     }
 
@@ -31,9 +34,18 @@ public class Ticket {
         this.payedTimestamp = payedTimestamp;
     }
 
+    public double getTicketPrice() {
+        return ticketPrice;
+    }
+
+    public void setTicketPrice(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
+
     @Override
     public String toString() {
         return "Ticket-ID: " + getId() + "\nCreatedTimestamp: " + getCreatedTimestamp() + "\nPayedTimestamp: "
                 + getPayedTimestamp();
     }
+
 }
