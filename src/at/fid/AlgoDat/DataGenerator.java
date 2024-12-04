@@ -17,7 +17,7 @@ public class DataGenerator {
         Random random = new Random();
         int[] data = new int[size];
         for (int i = 0; i < size; i++) {
-            data[i] = random.nextInt(min, max);
+            data[i] = random.nextInt(min, max + 1);
         }
         return data;
     }
