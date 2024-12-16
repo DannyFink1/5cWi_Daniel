@@ -1,5 +1,7 @@
 package at.fid.AlgoSort.algorithms;
 
+import java.util.List;
+
 public class BubbleSort implements Algorithm {
 
     @Override
