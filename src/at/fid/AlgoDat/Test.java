@@ -1,4 +1,4 @@
-package at.fid.AlgoDat;
+package at.fid.algoDat;
 
 public class Test {
     public static void main(String[] args) {

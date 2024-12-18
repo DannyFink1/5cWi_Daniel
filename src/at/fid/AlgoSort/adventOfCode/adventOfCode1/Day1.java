@@ -1,4 +1,4 @@
-package at.fid.AlgoSort.data.adventOfCode1;
+package at.fid.AlgoSort.adventOfCode.adventOfCode1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import at.fid.AlgoSort.algorithms.BubbleSort;
 
-public class AdventOfCode {
+public class Day1 {
     public void solution1(File file) {
         try {
 

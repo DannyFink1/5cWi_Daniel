@@ -1,4 +1,4 @@
-package at.fid.AlgoDat;
+package at.fid.algoDat;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
