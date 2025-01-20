@@ -1,4 +1,4 @@
-package at.fid.AlgoSort.adventOfCode.adventOfCode1;
+package at.fid.algoSort.adventOfCode.adventOfCode1;
 
 import java.io.File;
 

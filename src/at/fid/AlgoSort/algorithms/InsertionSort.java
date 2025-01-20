@@ -1,4 +1,4 @@
-package at.fid.AlgoSort.algorithms;
+package at.fid.algoSort.algorithms;
 
 public class InsertionSort implements Algorithm {
 

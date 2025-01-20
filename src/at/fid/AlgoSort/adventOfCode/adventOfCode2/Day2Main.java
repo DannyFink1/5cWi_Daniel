@@ -1,8 +1,8 @@
-package at.fid.AlgoSort.adventOfCode.adventOfCode2;
+package at.fid.algoSort.adventOfCode.adventOfCode2;
 
 import java.io.File;
 
-import at.fid.AlgoSort.adventOfCode.adventOfCode1.Day1;
+import at.fid.algoSort.adventOfCode.adventOfCode1.Day1;
 
 public class Day2Main {
     public static void main(String[] args) {

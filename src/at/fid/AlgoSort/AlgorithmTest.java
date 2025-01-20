@@ -1,6 +1,6 @@
-package at.fid.AlgoSort;
+package at.fid.algoSort;
 
-import at.fid.AlgoSort.algorithms.Algorithm;
+import at.fid.algoSort.algorithms.Algorithm;
 
 public class AlgorithmTest {
     private Algorithm algorithm;
