@@ -24,7 +24,7 @@ app.get("/people", (req,res)=>{
 
 app.get("/people/:id", (req,res)=>{
     for (let index = 0; index < list.length; index++) {
-        const element = list[index];
+        const element = list[index];    
         if(req.params.id == element.id){
             res.send(element);
         }
@@ -40,6 +40,22 @@ app.post("/people", (req,res)=>{
 
 
 });
+
+app.put("/people/:id", (req, res) => {
+    for (let index = 0; index < list.length; index++) {
+        const element = list[index];    
+        if(req.params.id == element.id){
+            list[index] = req.body;
+            res.send(list[index]);
+        }
+    }
+    res.send("id not found");
+})
+
+app.delete("/people/:id", (req,res) => {
+    list.pop(req.params.id);
+    res.send("deleted");
+})
 
 app.listen(port, ()=>{
     console.log("Server is running on Port: " + port);
